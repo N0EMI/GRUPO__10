@@ -1,0 +1,109 @@
+canvas { 
+    background-color: #b3daa3;
+    border: 1px solid rgb(26, 20, 20);
+    height:200px;
+    width:100%;
+    border-radius: 5px;
+    padding: 10px; 
+}
+.container{  
+    width: 90%;
+    max-width: 900px;
+    grid-gap: 20px;
+    grid-template-areas: "widget-0 header header ";
+}
+.container button {  /* botones dentro de la lista*/
+    background-image: url(/botonn.gif);
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+}
+.container .header{
+    background-image: linear-gradient(to left,#1b456b,#4d6aa8,#21396b);
+    color: #ffff;
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .header1{
+    background-image: linear-gradient(to left,#217232,#4da861,#216b40);
+    color: #ffff;
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container.widget-0{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: widget-0;
+}
+.container .widget-1{
+    background-image: linear-gradient(to left,#11324d,#42629c,#1b315f);
+    margin:10px;
+    border-radius: 5px;
+    grid-area: widget-1;
+    color: rgb(15, 14, 15);
+}
+
+
+#principal button{ /* botones principales*/
+    background-image: linear-gradient(to left,#377a29,#55b672,#328b32);
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+    
+}
+body {
+    position: relative;
+    height: 100%;
+    background-image: url(/fondo.jpg);
+}
+#principal{        /*fondo principal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(/gris.webp);
+}
+@media (min-width: 768px){ 
+     
+    .buttonleftmenu{
+        text-align: right;
+        
+    }
+    .buttonrightmenu{
+        text-align: left;
+    }
+    .buttoncentermenu{
+        text-align: center;
+    }
+}
+.modalSpin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(35, 100, 161, 0.1); /* Black w/ opacity */
+  }
+/*
+div[class="row"] {
+    outline: 1px dotted rgba(255, 0, 0, 1);
+}
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+    outline: 1px dotted rgba(0, 0, 0, 0.5);
+}
+*/
